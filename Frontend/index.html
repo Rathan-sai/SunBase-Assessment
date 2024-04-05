@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Document</title>
+</head>
+<body>
+<section class="login-page">
+    <h1>Log in page</h1>
+    <form class="login">
+        <div class="username">
+            <label for="username">Username:</label>
+            <input type="text" required id="username" placeholder="Login Id">
+        </div>
+        <div class="password">
+            <label for="password">Password:</label>
+            <input type="password" required id="password" placeholder="Password">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<section class="customer-list-section">
+    <div class="container"></div>
+    <div class="top" >
+        <div class="tag">Customer List</div>
+        <div>
+            <button id="add-customer">Add Customer</button>
+            <select name="search" id="search">
+                <option value="all" style="color:gray;">Search By</option>
+                <optgroup>
+                    <option>First name</option>
+                    <option>City</option>
+                    <option>Email</option>
+                    <option>Phone</option>
+                </optgroup>
+            </select>
+            <input type="search" />
+            <i class="fas fa-search search-icon"></i>
+            <button class="btn" id="sync">Sync</button>
+        </div>
+    </div>
+    <table>
+        <thead>
+        </tr>
+        <tr>
+            <td>First name</td>
+            <td>Last name</td>
+            <td>Street</td>
+            <td>City</td>
+            <td>State</td>
+            <td>Email</td>
+            <td>Phone</td>
+            <td>Action</td>
+        </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+        <tfoot></tfoot>
+    </table>
+</section>
+
+<section class="reg-form">
+    <form id="mern">
+        <div class="close-btn"><i class="fa fa-close"></i></div>
+        <div>
+            <input type="text" id="first" placeholder="First Name" required>
+            <input type="text" id="last" placeholder="Last Name" required>
+        </div>
+        <div>
+            <input type="text" id="street" placeholder="Street" required>
+            <input type="text" id="city" placeholder="City" required>
+        </div>
+        <div>
+            <input type="text" id="address" placeholder="Address" required>
+            <input type="text" id="state" placeholder="State" required>
+        </div>
+        <div>
+            <input type="text" id="email" placeholder="Email" required>
+            <input type="text" id="phone" placeholder="Phone" required>
+        </div>
+        <div>
+            <button class="btn submit-btn add" type="submit">Submit</button>
+            <button class="btn submit-btn update" type="submit" style="display: none;">Update</button>
+        </div>
+    </form>
+</section>
+
+<script src="./script.js"></script>
+</body>
+</html>

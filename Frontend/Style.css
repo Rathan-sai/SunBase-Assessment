@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form * {
+  margin: 0.5em;
+}
+ input
+{
+  width: fit-content;
+  border-radius: 5px;
+  padding: 0.5em;
+
+  border: 1px solid gray;
+}
+ button,select {
+  background-color: rgb(23, 166, 223);
+  border: none;
+  color: white;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 0.5em;
+
+  border: 1px solid gray
+}
+
+.CustDetls {
+  width: fit-content;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.CustDetls button {
+  margin-left: 150%;
+}
+.inpNav{
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="%23555"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>');
+    background-repeat: no-repeat;
+    background-position:right 10px center;
+    border-radius: 5px;
+}
+
+.searchBox{
+    position: relative;
+}
+.search-icon{
+    position: absolute;
+    top:15%;
+    right: 5%;
+    transform: rotate(90deg);
+    color: black;
+}
+
+table{
+    background-color: black;
+    color: white;
+}
+
+table thead tr .title {
+    margin: 50%;
+}
+table thead tr td,table tbody tr td{
+    padding:1em;
+
+    border:none;
+}
+.delete{
+    border-radius: 80%;
+    background-color: red;
+    font-weight: bold;
+}
+.edit{
+    background:none;
+    border: none;
+}
